@@ -1,0 +1,22 @@
+:root{
+  --primary-text : #a91c1d ;
+  --prymary-border : #4f0d0d ;
+  --primary-hover : #2a0505 ;
+  --primary-bg : #0c0b0b ;
+
+  --secondary-bg : #0e140d ;
+}
+
+/* :root{
+  --primary-text : #ff5e00 ;
+  --prymary-border : #ff8c00 ;
+  --primary-hover : #ffaa00 ;
+  --primary-bg : #333333 ;
+} */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
