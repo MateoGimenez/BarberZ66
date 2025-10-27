@@ -2,7 +2,7 @@ import "./home.css"
 
 const Home = () => {
   return (
-        <section className="hero">
+        <section className="hero" id="Home">
             <img src="corte-agustin.jpg" alt="" />
             <div className="overlay">
             <h1>Bienvenido a Barbería <strong>Z66</strong></h1>
