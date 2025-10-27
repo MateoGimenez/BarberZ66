@@ -17,8 +17,8 @@ export default function NavBar() {
 
         <nav className={`navegacion ${open ? "open" : ""}`}>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Nosotros</a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Nosotros">Nosotros</a></li>
                 <li className="menu-turno"><a href="">Turno</a></li>
             </ul>           
         </nav>
