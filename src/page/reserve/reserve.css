@@ -1,4 +1,59 @@
 section{
     min-height: 100vh;
     color: white;
+    font-family: "Roboto" , sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section h1{
+    color: var(--primary-text);
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+}
+
+.my-calendar.rdp-root {
+  --rdp-cell-size: 40px;
+  --rdp-accent-color: #a91c1d;
+  --rdp-accent-color-dark: #7a1011;
+  --rdp-background-color: #1a1a1a;
+  --rdp-outline: none;
+  color: white;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.my-calendar.rdp-root .rdp-day_selected {
+  background-color: var(--rdp-accent-color) !important;
+  color: white !important;
+  border-radius: 50%;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.my-calendar.rdp-root .rdp-day_selected:hover {
+  background-color: var(--rdp-accent-color-dark) !important;
+}
+
+.my-calendar.rdp-root .rdp-day_today {
+  border: 1px solid var(--rdp-accent-color);
+  color: var(--rdp-accent-color);
+}
+
+.my-calendar.rdp-root .rdp-day_disabled {
+  opacity: 0.4;
+  text-decoration: line-through;
+}
+
+.contenedor-calendario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
