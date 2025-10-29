@@ -7,6 +7,8 @@ import "./reserve.css";
 export default function Reserve() {
   const [selected, setSelected] = useState<Date>();
 
+  const Horarios = ["09:00" , "09:30" , "10:00" , "10:30" , "11:00" , "11:30" , "12:00"]
+
   return (
     <section>
       <h1>Reserva tu turno</h1>
@@ -28,13 +30,18 @@ export default function Reserve() {
           }
           className="my-calendar"
         />
+        {selected && (
+                  <div className="horarios">
+                    {Horarios.map((value)=>(
+                    <div className="listado-horarios">
+                      <button>{value}</button>
+                    </div>
+                     ))}
+                  </div>
+        )}
       </div>
 
-      <div className="contenedor-horario">
-        aca van los horarios
-      </div>
-
-      <button>Reservar</button>
+      <button className="reservar-bt" disabled={!selected}>Reservar</button>
     </section>
   );
 }
